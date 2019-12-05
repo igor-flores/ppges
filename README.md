@@ -2,7 +2,7 @@
 ##### [PPGES] Site expositivo
 
 ## CRUDs
--[x] Alunos
+- [x] Alunos
 -[ ] Apresentação
 -[ ] Artigos
 -[x] Carrossel
