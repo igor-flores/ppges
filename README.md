@@ -18,5 +18,3 @@
 > *[Ler documentação](https://github.com/Stichoza/google-translate-php)*
  
 - Inserir comandos em *adm/assets/stichoza*
-
-
