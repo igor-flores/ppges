@@ -1,3 +1,3 @@
 # PPGES
-#####[PPGES] Site expositivo
+##### [PPGES] Site expositivo
 
