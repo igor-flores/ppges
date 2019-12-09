@@ -25,25 +25,9 @@
     <?php
     $query = mysqli_query($con, "
         SELECT 
-            *, (
-                SELECT 
-                    `titulo` 
-                FROM 
-                    `apresentacao` 
-                WHERE 
-                `idioma_shortname` = 'en_US'
-            ) AS 'title',(
-                SELECT 
-                    `texto` 
-                FROM 
-                    `apresentacao` 
-                WHERE 
-                `idioma_shortname` = 'en_US'
-            ) AS 'text'
+            *
         FROM 
             `apresentacao` 
-        WHERE 
-            `idioma_shortname` = 'pt_BR'
     ");
     $i=0;
     if(mysqli_num_rows($query) >= 1){

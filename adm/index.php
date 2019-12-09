@@ -40,13 +40,14 @@
                 <div class="sidebar-heading"> [PPGES] Administrativo</div>
                 <div class="list-group list-group-flush">
                     <a href=".?pag=home" class="list-group-item list-group-item-action bg-light text-success">Dashboard</a>
-                    <a href=".?pag=gerenciarApresentacao" class="list-group-item list-group-item-action bg-light text-success">Apresentação</a>
-                    <a href=".?pag=gerenciarCoordenacao" class="list-group-item list-group-item-action bg-light text-success">Coordenação</a>
-                    <a href=".?pag=gerenciarCarrossel" class="list-group-item list-group-item-action bg-light text-success">Carrossel</a>
-                    <a href=".?pag=gerenciarNoticias" class="list-group-item list-group-item-action bg-light text-success">Notícias</a>
-                    <a href=".?pag=gerenciarProfessores" class="list-group-item list-group-item-action bg-light text-success">  Professores</a>
                     <a href=".?pag=gerenciarAlunos" class="list-group-item list-group-item-action bg-light text-success">  Alunos</a>
+                    <a href=".?pag=gerenciarApresentacao" class="list-group-item list-group-item-action bg-light text-success">Apresentação</a>
+                    <a href=".?pag=gerenciarArtigos" class="list-group-item list-group-item-action bg-light text-success">Artigos</a>
+                    <a href=".?pag=gerenciarCarrossel" class="list-group-item list-group-item-action bg-light text-success">Carrossel</a>
+                    <a href=".?pag=gerenciarCoordenacao" class="list-group-item list-group-item-action bg-light text-success">Coordenação</a>
                     <a href=".?pag=gerenciarDisciplinas" class="list-group-item list-group-item-action bg-light text-success">  Disciplinas</a>
+                    <a href=".?pag=gerenciarInformes" class="list-group-item list-group-item-action bg-light text-success">Informes</a>
+                    <a href=".?pag=gerenciarProfessores" class="list-group-item list-group-item-action bg-light text-success">  Professores</a>
                 </div>
             </div>
 

@@ -39,33 +39,20 @@
                 `id_apresentacao`,
                 `titulo`,
                 `texto`,
-                `idioma_shortname`
-            )VALUES(
-                $max,
+                `title`,
+                `text`
+            )VALUES( 
+                 $max,
                 '$titulo',
                 '$texto',
-                'pt_BR'
+                '$title',
+                '$text'
             );
         ";
 
         if(mysqli_query($con, $sql)){
-            $sql = "
-                INSERT INTO `apresentacao`(
-                    `id_apresentacao`,
-                    `titulo`,
-                    `texto`,
-                    `idioma_shortname`
-                )VALUES(
-                    $max,
-                    '$title',
-                    '$text',
-                    'en_US'
-                );
-            ";
-            if(mysqli_query($con, $sql)) {
-                alertModal("Boa!", "Tópico cadastrado com sucesso!");
-                include("gerenciarApresentacao.php");
-            }
+            alertModal("Boa!", "Tópico cadastrado com sucesso!");
+            include("gerenciarApresentacao.php");
         }else{
             alertModal("Merda", "Deu algum erro!");
             include("gerenciarApresentacao.php");
@@ -74,18 +61,31 @@
     }elseif(isset($_POST['alterarapresentacao'])){
         $id = $_POST['alterarapresentacao'];
         $titulo = addslashes($_POST['titulo']);
-        $texto = $_POST['texto'];
+        $texto = addslashes($_POST['texto']);
         $idioma = $_POST['language'];
 
-        $sql = "
-            UPDATE
-                `apresentacao`
-            SET
-                `titulo` = '$titulo', 
-                `texto` = '$texto'
-            WHERE 
-                `id_apresentacao` = $id AND `idioma_shortname` = '$idioma'
-        ";
+        if($idioma == 'pt_BR'){
+            $sql = "
+                UPDATE
+                    `apresentacao`
+                SET
+                    `titulo` = '$titulo', 
+                    `texto` = '$texto'
+                WHERE 
+                    `id_apresentacao` = $id
+            ";
+        }elseif($idioma == 'en_US'){
+            $sql = "
+                UPDATE
+                    `apresentacao`
+                SET
+                    `title` = '$titulo', 
+                    `text` = '$texto'
+                WHERE 
+                    `id_apresentacao` = $id
+            ";
+        }
+
         if(mysqli_query($con, $sql)){
             alertModal("Boa!", "Tópico alterado com sucesso!");
             include("gerenciarApresentacao.php");

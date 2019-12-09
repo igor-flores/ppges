@@ -7,11 +7,11 @@ if(isset($_POST['remover_artigo'])){
     @unlink("../assets/artigos/$nome[pdf]");
 
     $sql = "
-            DELETE FROM
-                artigo
-            WHERE
-                id_artigo = $id
-        ";
+        DELETE FROM
+            artigo
+        WHERE
+            id_artigo = $id
+    ";
 
     if(mysqli_query($con, $sql)){
         alertModal("Remoção bem sucedida!", "Artigo removido com sucesso!");
