@@ -14,8 +14,8 @@
             require_once ('assets/stichoza/vendor/autoload.php');
             use Stichoza\GoogleTranslate\GoogleTranslate;
             $tr = new GoogleTranslate('en_US');
-            include "../function.php";
-            include "../conexao.php";
+            include_once "../function.php";
+            include_once "../conexao.php";
             session_start();
 
             if (isset($_GET['logout']) && $_GET['logout'] == 'true'){
@@ -110,13 +110,19 @@
                         </button>
                     </div>
 
-                    <form action='.?pag=$action' enctype='multipart/form-data' method='post'>
+                    <form action='.?pag=alteraDados' enctype='multipart/form-data' method='post' autocomplete="off">
                         <div class='modal-body'>
                             <label for="nomeconfig">Nome</label>
-                            <input type="text" id='nomeconfig' name="nome" placeholder="" class="form-control" value="<?= $_SESSION['usuario']['nome']?>" required><br>
+                            <input type="text" id='nomeconfig' name="nome" placeholder="Insira seu nome" class="form-control" value="<?= $_SESSION['usuario']['nome']?>" required><br>
                             <label for="emailconfig">Email</label>
-                            <input type="email" id='emailconfig' name="email" placeholder="" class="form-control" value="<?= $_SESSION['usuario']['email']?>" required>
+                            <input type="email" id='emailconfig' name="email" placeholder="Insira seu email" class="form-control" value="<?= $_SESSION['usuario']['email']?>" required><br>
+                            <label for="emailconfig">Confirme seu Email</label>
+                            <input type="email" id='emailconfig' name="confirmaemail" placeholder="Insira seu email novamente" class="form-control" value="<?= $_SESSION['usuario']['email']?>" required><br>
 
+                            <label for="emailconfig">Digite sua senha para confirmar</label>
+                            <input type="password" id='csenha' name="confirmasenha" placeholder="Insira sua senha" class="form-control" required autocomplete="off">
+                            <input type="hidden" name="pag" value="<?= $_GET['pag']?>">
+                            <input type="hidden" name="altera_dados" value="true">
                         </div>
                         <div class='modal-footer'>
                             <button type='submit' class='btn btn-success'>Confirmar</button>
@@ -127,7 +133,9 @@
             </div>
         </div>
 
-
+<script>
+    $('#csenha').attr('autocomplete', 'off');
+</script>
 
     </body>
 

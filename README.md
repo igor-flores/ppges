@@ -3,11 +3,11 @@
 
 ## CRUDs
 - [x] Alunos
-- [ ] Apresentação
-- [ ] Artigos
+- [x] Apresentação
+- [x] Artigos
 - [x] Carrossel
-- [ ] Coordenação
-- [ ] Dados da conta
+- [x] Coordenação
+- [x] Dados da conta
 - [x] Disciplinas
 - [ ] Eventos
 - [x] Informações

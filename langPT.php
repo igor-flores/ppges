@@ -71,20 +71,7 @@
         'botao' => 'Ir para a página inicial'
     ];
 
-    /* HOME */
-    $LANG['home'] = [
-        'jumb' => [
-            'titulo' => 'Bem vindo à página do PPGES!',
-            'body' => "Esse é o novo site do Programa de Pós Graduação em Engenharia de Software (PPGES), da UNIPAMPA, <i>campus</i> Alegrete ",
-            'info' => 'Conheça a apresentação do nosso programa no clicando no botão abaixo!',
-            'botao' => 'Conheça nosso programa!'
-        ],
-        'noticia' => [
-            'titulo' => 'Últimas notícias',
-            'botao' => 'Abrir noticia'
-        ]
 
-    ];
 
     /*  ORIENTADORES */
     $LANG['orientadores']['botao'] = "Ver mais!";

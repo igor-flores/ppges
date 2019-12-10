@@ -61,7 +61,7 @@
     $i=0;
     if(mysqli_num_rows($query) >= 1){
         echo "
-                   <table class='table table-responsive-sm'>
+                   <table class='table table-responsive-sm sortable'>
                         <tr>
                             <th>#</th>
                             <th>Título</th>

@@ -47,7 +47,7 @@
     $i=0;
     if(mysqli_num_rows($query) >= 1){
         echo "
-           <table class='table table-responsive-sm'>
+           <table class='table table-responsive-sm sortable'>
                 <tr>
                     <th>#</th>
                     <th>Nome</th>
@@ -64,12 +64,12 @@
                 3 => $servidor['comissao'] == 'Comissão Acompanhamento da Produção Docente' ? 'selected' : '',
                 4 => $servidor['comissao'] == 'Secretário Acadêmico' ? 'selected' : '',
             ];
-            $servidor['cargo'] = strlen($servidor['cargo']) > 15 ? substr($servidor['cargo'], 0, 30) . "..." : $servidor['cargo'];
+            $cargo = strlen($servidor['cargo']) > 20 ? substr($servidor['cargo'], 0, 20) . "..." : $servidor['cargo'];
             echo "
                 <tr>
                     <td class='align-middle'>$servidor[id_coordenacao]</td>
                     <td class='align-middle'>$servidor[nome]</td>
-                    <td class='align-middle'>$servidor[cargo]</td>
+                    <td class='align-middle'>$cargo</td>
                     <td class='align-middle'> ";
 
             formModal('3'.$i, "<span class='fa fa-edit'></span> Editar", "warning text-white", "crudCoordenacao", "        
