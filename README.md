@@ -8,7 +8,7 @@
 - [x] Carrossel
 - [x] Coordenação
 - [x] Dados da conta
-- [x] Disciplinas
+- [x] Disciplinas 
 - [ ] Eventos
 - [x] Informações
 - [ ] Informes
