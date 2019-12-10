@@ -13,6 +13,7 @@
 - [x] Informações
 - [ ] Informes
 - [x] Professores
+- [ ] Seminários e Palestras
 
 ## Instalação API Stichoza
 > *[Ler documentação](https://github.com/Stichoza/google-translate-php)*
