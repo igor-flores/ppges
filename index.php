@@ -128,11 +128,18 @@
                 <hr class="clearfix w-100 d-md-none pb-3">
                 <div class="col-md-3 mb-md-0 mb-3">
                     <h5 class="text-uppercase"><?= $LANG['contato']['titulo'] ?></h5>
+                    <?php
+                        $query = mysqli_query($con, "SELECT * FROM `informacao`");
+                        $dados = mysqli_fetch_array($query);
 
+                        $email = $dados['email'] != "" ? "<p>".$LANG['contato']['email'].": <span class='text-success'>$dados[email]</span></p>" : "";
+                        $telefone = $dados['telefone'] != "" ? "<p>".$LANG['contato']['telefone'].": <span class='text-success'>$dados[telefone]</span></p>" : "";
+                    ?>
                     <ul class="list-unstyled">
                         <li>
-                            <p>Email: <span class="text-success">example@email.com</span></p>
-                            <p><?= $LANG['contato']['telefone']?>: <span class="text-success">(99) 9 9999-9999 </span></p>
+                            <?= $email ?>
+                            <?= $telefone ?>
+
                         </li>
                     </ul>
 

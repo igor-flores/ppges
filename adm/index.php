@@ -1,10 +1,12 @@
 <!DOCTYPE html>
 <html lang="pt">
     <head>
+
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="../assets/fonts/font-awesome-4.7/css/font-awesome.min.css">
         <link rel="stylesheet" href="../assets/bootstrap-4.1.3/css/bootstrap.min.css">
         <link rel="stylesheet" href="assets/css/simple-sidebar.css">
+        <link rel="stylesheet" href="../assets/fonts/fontawesome-pro-5.11.2/css/all.min.css">
 
         <script src="../assets/js/jquery-3.4.1.min.js"></script>
         <script src="../assets/bootstrap-4.1.3/js/bootstrap.bundle.min.js"></script>

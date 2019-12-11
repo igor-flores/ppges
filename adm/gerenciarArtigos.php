@@ -12,7 +12,7 @@
     formModal(1, "<span class='fa fa-plus'></span> Adicionar Artigo", "outline-dark", "crudArtigos", "
         <small style='color: gray;'>(*) Campo obrigatório.</small><br>
         <label for='nome'>PDF*</label>
-        <input type='file' name='pdf' class='form-control'accept='application/pdf' required> <br>
+        <input type='file' name='pdf' class='form-control' accept='application/pdf' required> <br>
         <label for='nome'>Data de Publicação*</label>
         <input type='date' name='data'class='form-control' required><br>
         <label for='nome'>Título*</label>

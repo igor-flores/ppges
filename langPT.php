@@ -49,7 +49,8 @@
     /* FOOTER */
     $LANG['contato'] = [
       'titulo' => 'contato',
-      'telefone' => 'telefone'
+      'email' => 'Email',
+      'telefone' => 'Telefone'
     ];
 
     $LANG['lang'] = [
