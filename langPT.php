@@ -71,6 +71,14 @@
         'botao' => 'Ir para a página inicial'
     ];
 
+/* HOME */
+$LANG['home'] = [
+    'noticia' => [
+        'titulo' => 'Últimas notícias',
+        'botao' => 'Abrir Notícia'
+    ]
+
+];
 
 
     /*  ORIENTADORES */

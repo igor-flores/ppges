@@ -73,12 +73,6 @@
 
     /* HOME */
     $LANG['home'] = [
-        'jumb' => [
-            'titulo' => 'Welcome to the PPGES page!',
-            'body' => "This is the new site of the UNIPAMPA Software Engineering Graduate Program (PPGES), Alegrete <i>campus</i>",
-            'info' => 'Meet the presentation of our program by clicking the button below!',
-            'botao' => 'Meet our program!!'
-        ],
         'noticia' => [
             'titulo' => 'Latest news',
             'botao' => 'Open New'
