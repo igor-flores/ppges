@@ -21,7 +21,7 @@
 
     <link rel="stylesheet" href="assets/bootstrap-4.1.3/css/bootstrap.min.css">
     <link rel="stylesheet" href="assets/fonts/font-awesome-4.7/css/font-awesome.min.css">
-
+    <link rel="stylesheet" href="" crossorigin="anonymous">
     <script src="assets/js/jquery-3.4.1.min.js"></script>
     <script src="assets/bootstrap-4.1.3/js/bootstrap.js"></script>
     <script src="assets/js/sorttable.js"></script>
